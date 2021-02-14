@@ -19,17 +19,21 @@ A user should be able to enter a new number and see new results over and over ag
 ## Specs
 
 Describe: beepBoop()
-1. Test: "It should return an array with a 0 if the number 0 is inputted"
+
+Test 1: "It should return an array with a 0 if the number 0 is inputted"
+
 Expect(beepBoop(0).toEqual([0]);
 
-2. Test: “If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5”
+Test 2: “If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5”
 
 Expect:(beepBoop(5).toEqual(“'0', Beep!, Boop!,"Won't you be my neighbor?", 4, 5”)
 
-3. Test: "If a user inputs a 10, the number 10 should be replaced with "Beep!"
+Test 3: "If a user inputs a 10, the number 10 should be replaced with "Beep!"
+
 Expect: (beepBoop(10).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!")
 
-4. Test: "If a user inputs a 13, the number 13 should be replaced with "Won't you be my neighbor?"
+Test 4: "If a user inputs a 13, the number 13 should be replaced with "Won't you be my neighbor?"
+
 Expect: (beepBoop(13).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?")
 
 

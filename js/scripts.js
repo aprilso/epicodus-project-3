@@ -2,7 +2,6 @@
 
 function beepBoop(number) {
   let numberList = ["0"];
-
   for (let i=1; i <= number; i+=1) {
     if (i == 1) {
       numberList.push("Beep!");
@@ -16,6 +15,12 @@ function beepBoop(number) {
   }
   return numberList;
 }
+
+// numberList.forEach(function(beepBoop) {
+//   return numberList + "!!!!";
+//   console.log("testing");
+// });
+
 
 
 // User Interface logic (front end)
