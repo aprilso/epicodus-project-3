@@ -1,12 +1,11 @@
 // Business logic (backend)
 
 function beepBoop(number) {
-  let numberList = [];
+  let numberList = ["0"];
 
-  for (let i=0; i < number+1; i+=1) {
+  for (let i=1; i < number; i+=1) {
     if (i == 1) {
       numberList.push("Beep!");
-      console.log("working")
     } else if (i == 2) {
       numberList.push("Boop!");
     } else if (i == 3) {
@@ -17,7 +16,7 @@ function beepBoop(number) {
   }
   return numberList;
 }
-//create a new list or array, return these in a list
+
 // don't use if else if for this, rather just return in an array
 
 
