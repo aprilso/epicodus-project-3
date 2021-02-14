@@ -16,6 +16,14 @@ function beepBoop(number) {
   return numberList;
 }
 
+//Different ways to try to approach specs 3 & 4:
+//1) turning each number into a string, checking the string if it has the number 1, 2, or 3
+
+//2) running a forEach loop?
+// numberList.forEach(function(eachNumberList) {
+//    return "test conditions"
+// });
+
 // numberList.forEach(function(beepBoop) {
 //   return numberList + "!!!!";
 //   console.log("testing");
@@ -29,7 +37,7 @@ $(document).ready(function() {
   $("form#submission").submit(function(event) {
     event.preventDefault();
     const number = $("#numInput").val();
-    const result = beepBoop(number);
+    const result = beepBoop(number); //change to result of second function
     $("#output").text(result);
   });
   
