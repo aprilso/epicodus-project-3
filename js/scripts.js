@@ -3,7 +3,7 @@
 function beepBoop(number) {
   let numberList = ["0"];
 
-  for (let i=1; i < number; i+=1) {
+  for (let i=1; i <= number; i+=1) {
     if (i == 1) {
       numberList.push("Beep!");
     } else if (i == 2) {
@@ -16,8 +16,6 @@ function beepBoop(number) {
   }
   return numberList;
 }
-
-// don't use if else if for this, rather just return in an array
 
 
 // User Interface logic (front end)
