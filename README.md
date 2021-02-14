@@ -12,7 +12,7 @@ A web application that takes a number from a user and returns a range of numbers
 These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in the finished program,
 
 * The number 13 should be replaced with "Won't you be my neighbor?"
-* The number 21 should be replaced with "Boop".
+* The number 21 should be replaced with "Boop!".
 * The number 32 should be replaced with "Won't you be my neighbor?"
 A user should be able to enter a new number and see new results over and over again.
 
@@ -23,7 +23,15 @@ Describe: beepBoop()
 Expect(beepBoop(0).toEqual([0]);
 
 2. Test: “If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5”
-Expect:(beepBoop(0).toEqual(“0, Beep!, Boop,"Won't you be my neighbor?, 4, 5”)
+
+Expect:(beepBoop(5).toEqual(“'0', Beep!, Boop!,"Won't you be my neighbor?", 4, 5”)
+
+3. Test: "If a user inputs a 10, the number 10 should be replaced with "Beep!"
+Expect: (beepBoop(10).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!")
+
+4. Test: "If a user inputs a 13, the number 13 should be replaced with "Won't you be my neighbor?"
+Expect: (beepBoop(13).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?")
+
 
 
 
