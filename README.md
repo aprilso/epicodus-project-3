@@ -21,24 +21,16 @@ A user should be able to enter a new number and see new results over and over ag
 Describe: beepBoop()
 
 Test 1: "It should return an array with a 0 if the number 0 is inputted"
-
 Expect(beepBoop(0).toEqual([0]);
 
 Test 2: “If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5”
-
 Expect:(beepBoop(5).toEqual(“'0', Beep!, Boop!,"Won't you be my neighbor?", 4, 5”)
 
-Test 3: "If a user inputs a 10, the number 10 should be replaced with "Beep!"
-
+Test 3: "It will replace numbers that contain 1 with 'Beep!'"
 Expect: (beepBoop(10).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!")
 
-Test 4: "If a user inputs a 13, the number 13 should be replaced with "Won't you be my neighbor?"
-
+Test 4: "If a user inputs a number containing multiple special digits (1, 2, or 3), it will replace the number with the phrase prioritizing 3, 2, 1 as indicated above"
 Expect: (beepBoop(13).toEqual("0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?")
-
-
-
-
 
 
 
